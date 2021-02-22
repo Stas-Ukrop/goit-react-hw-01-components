@@ -1,0 +1,28 @@
+.statistics {
+  width: 350px;
+  height: 180px;
+  background-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  display: inline-block;
+  width: 100%;
+  margin-block-start: 25px;
+  margin-block-end: 60px;
+  padding-left: 115px;
+}
+.stat-list {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-inline-start: 0px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

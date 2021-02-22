@@ -1,0 +1,18 @@
+.transactions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.transaction-history {
+  width: 560px;
+}
+th {
+  background-color: greenyellow;
+}
+td {
+  text-align: center;
+}
+tr {
+  height: 35px;
+}
