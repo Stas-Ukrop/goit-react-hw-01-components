@@ -1,6 +1,7 @@
 import React from "react";
 import Buttons from "../Buttons";
 import "./transactions.css";
+import PropTypes from "prop-types";
 
 const Transactions = ({ onClick, items }) => {
   let cardTable = items.map(({ id, type, amount, currency }) => {
@@ -30,3 +31,7 @@ const Transactions = ({ onClick, items }) => {
   );
 };
 export default Transactions;
+
+Transactions.propTypes = {
+  items: PropTypes.array,
+};

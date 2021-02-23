@@ -1,9 +1,10 @@
 import React from "react";
 import Buttons from "../../components/Buttons";
 import "./Profile.css";
+import PropTypes from "prop-types";
 const Profile = ({ onClick, name, tag, location, avatar, stats }) => {
   return (
-    <div className='style-card'>
+    <div className="style-card">
       <div className="content">
         <div className="profile">
           <div className="description">
@@ -34,3 +35,11 @@ const Profile = ({ onClick, name, tag, location, avatar, stats }) => {
   );
 };
 export default Profile;
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.object,
+};

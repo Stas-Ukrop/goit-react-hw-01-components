@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Buttons from "../Buttons.js";
 import "./Statistic.css";
+import PropTypes from "prop-types";
+
 const Statistic = ({ onClick, title, stats }) => {
-  let hText = null;
   const card = stats.map(({ id, label, percentage }) => {
     return (
       <li className="item" key={id}>
@@ -11,18 +12,21 @@ const Statistic = ({ onClick, title, stats }) => {
       </li>
     );
   });
-  if (title) {
-    hText = <h2 className="title">{title}</h2>;
-  }
+
   return (
     <div>
       <section className="statistics">
-        {hText}
-
+        {title && <h2 className="title">{title}</h2>}
         <ul className="stat-list">{card}</ul>
       </section>
       <Buttons onClick={onClick} />
     </div>
   );
 };
+
 export default Statistic;
+
+Statistic.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
+};

@@ -10,7 +10,7 @@ import FriendsJSON from "./components/Friends/friends.json";
 import Transactions from "./components/Transactions/Transactions.js";
 import transactions from "./components/Transactions/transactions.json";
 const App = () => {
-  const [selectId, setSelectId] = useState(null);
+  const [selectId, setSelectId] = useState('0');
   let context = null;
 
   switch (selectId) {
